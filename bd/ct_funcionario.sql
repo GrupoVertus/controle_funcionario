@@ -23,8 +23,6 @@ CREATE TABLE IF NOT EXISTS empresa
 	dt_contrato varchar(255) not null,
 	val_contrato varchar(255) not null,
 	quant_func int not null,
-	-- 'Quantidade de Gestores' decrementa da 'Quantidade de Funcionarios'
-	quant_gest int not null,
 	quant_cad_usados int not null
 );
 
