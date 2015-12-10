@@ -48,6 +48,25 @@ CREATE TABLE IF NOT EXISTS hora_trabalho
 	longitude varchar(255) not null
 );
 
+CREATE TABLE IF NOT EXISTS pagamento_cartao
+(
+	id_pagamento_cartao int primary key auto_increment not null,
+	num_cartao varchar(255),
+	bandeira varchar(255),
+	cod_seguranca varchar(255),
+	val_cartao varchar(255),
+	nm_cartao varchar(255),
+	-- ID externa	
+	id_empresa int
+);
+
+CREATE TABLE IF NOT EXISTS pagamento_boleto
+(
+	id_pagamento_boleto int primary key auto_increment not null,
+	id_empresa int
+	-- ID externa	
+);
+
 -- INSERTs para testar
 
 
